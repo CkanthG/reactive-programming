@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: reactive
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/reactive_students
+    username: postgres
+    password: password
+  flyway:
+    url: jdbc:postgresql://localhost:5432/reactive_students
+    user: postgres
+    password: password
+    enabled: true
+    baseline-on-migrate: true
